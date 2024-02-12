@@ -1,6 +1,9 @@
+.idea
+
 bin
 out
 data
 logs
+__pycache__
 
 .python-version
