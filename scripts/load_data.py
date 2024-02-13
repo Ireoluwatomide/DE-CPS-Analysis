@@ -77,7 +77,7 @@ class DataLoader:
                 ('247', 'UNUSED SERIAL NO./LISTING SHEET LINE'),
                 ('248', 'OTHER - SPECIFY'),
                 ('256', 'REMOVED DURING SUB-SAMPLING'),
-                ('257', 'UNIT ALREADY HAD A CHANCE OF SELECTION')]
+                ('259', 'UNIT ALREADY HAD A CHANCE OF SELECTION')]
         
         self.load_data('dim_final_outcome', data)
 

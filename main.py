@@ -1,6 +1,7 @@
 # Path: main.py
 
 # Import the required libraries
+from scripts.db_connect import Database
 from scripts.data_model import DataModel
 from scripts.load_data import DataLoader
 from scripts.extract_data import extract_raw_data
@@ -25,7 +26,8 @@ def main():
     loader.load_all_tables()
 
     # # Close database connection
-    # conn.close()
+    db = Database()
+    db.disconnect()
 
 
 if __name__ == '__main__':
