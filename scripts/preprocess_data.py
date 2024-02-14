@@ -1,9 +1,8 @@
 # Path: scripts/preprocess_data.py
 
 # Import the required libraries
-from .logger import logs
 import pandas as pd
-from datetime import datetime
+from .logger import logs
 
 
 def preprocess_raw_data(df):
