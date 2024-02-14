@@ -7,7 +7,7 @@ FROM
 LEFT JOIN
     basic_monthly_cps.dim_geographic_division b
 ON
-    a.geographical_division = b.id
+    a.geographic_division = b.id
 LEFT JOIN
     basic_monthly_cps.dim_race c
 ON
