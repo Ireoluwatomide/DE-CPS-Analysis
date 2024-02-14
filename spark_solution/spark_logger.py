@@ -1,4 +1,4 @@
-# Path: spark_solution/logger.py
+# Path: spark_solution/spark_logger.py
 
 # Import the required libraries
 import logging

@@ -1,3 +1,5 @@
+# Path: spark_solution/spark_extract_data.py
+
 # Import the required libraries
 from .spark_logger import logs
 from .spark_session import SparkContextManager
@@ -20,9 +22,9 @@ def extract_raw_data():
         # Define schema
         schema = StructType([
             StructField('HRHHID', StringType(), False),
-            StructField('HRMONTH', IntegerType(), True),
-            StructField('HRYEAR4', IntegerType(), True),
-            StructField('HUFINAL', IntegerType(), True),
+            StructField('HRMONTH', IntegerType(), False),
+            StructField('HRYEAR4', IntegerType(), False),
+            StructField('HUFINAL', IntegerType(), False),
             StructField('HEHOUSUT', StringType(), True),
             StructField('HRHTYPE', IntegerType(), True),
             StructField('HETELHHD', IntegerType(), True),
@@ -48,11 +50,11 @@ def extract_raw_data():
 
         logger.info("Data extraction completed. Total records extracted: {}".format(raw_df.count()))
 
-        raw_df.show(5)
+        # raw_df.show(5)
 
-        # Write extracted data to .csv file
-        raw_df.write.csv('./out/spark_raw_data.csv', header=True, mode='overwrite')
-        logger.info('Raw Extracted data saved to a CSV file "out/spark_raw_data.csv" successfully.')
+        # # Write extracted data to .csv file
+        # raw_df.write.csv('./out/spark_raw_data.csv', header=True, mode='overwrite')
+        # logger.info('Raw Extracted data saved to a CSV file "out/spark_raw_data.csv" successfully.')
 
         return raw_df
 
