@@ -1,9 +1,14 @@
 .idea
 
 bin
+bins
 out
 data
 logs
 __pycache__
+spark-warehouse
 
+.env
 .python-version
+
+qodana.yaml
