@@ -1,11 +1,11 @@
-# Path: main.py
+# Path: python_main.py
 
 # Import the required libraries
-from scripts.db_connect import Database
-from scripts.data_model import DataModel
-from scripts.load_data import DataLoader
-from scripts.extract_data import extract_raw_data
-from scripts.preprocess_data import preprocess_raw_data
+from python_solution.python_db_connect import Database
+from python_solution.python_data_model import DataModel
+from python_solution.python_load_data import DataLoader
+from python_solution.python_extract_data import extract_raw_data
+from python_solution.python_preprocess_data import preprocess_raw_data
 
 
 def main():

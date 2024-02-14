@@ -1,8 +1,8 @@
-# Path: scripts/preprocess_data.py
+# Path: python_solution/python_preprocess_data.py
 
 # Import the required libraries
 import pandas as pd
-from .logger import logs
+from .python_logger import logs
 
 
 def preprocess_raw_data(df):

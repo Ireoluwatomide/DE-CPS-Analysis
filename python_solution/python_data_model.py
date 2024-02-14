@@ -1,9 +1,9 @@
-# Path: scripts/data_model.py
+# Path: python_solution/python_data_model.py
 
 # Import the required libraries
-from .logger import logs
+from .python_logger import logs
 from psycopg2 import sql
-from .db_connect import Database
+from .python_db_connect import Database
 
 
 class DataModel:

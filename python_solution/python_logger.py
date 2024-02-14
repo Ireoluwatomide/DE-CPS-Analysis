@@ -1,4 +1,4 @@
-# Path: scripts/logger.py
+# Path: python_solution/python_logger.py
 
 # Import the required libraries
 import logging

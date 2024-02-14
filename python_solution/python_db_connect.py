@@ -1,9 +1,9 @@
-# Path: scripts/db_connect.py      
+# Path: python_solution/python_db_connect.py
 
 # Import the required libraries
 import os
 import psycopg2
-from .logger import logs
+from .python_logger import logs
 from psycopg2 import OperationalError
 
 

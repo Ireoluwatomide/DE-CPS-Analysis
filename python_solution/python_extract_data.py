@@ -1,9 +1,9 @@
-# Path: scripts/extract_data.py
+# Path: python_solution/python_extract_data.py
 
 # Import the required libraries
 import pandas as pd
 from tqdm import tqdm
-from .logger import logs
+from .python_logger import logs
 
 
 def extract_raw_data():
