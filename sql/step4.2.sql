@@ -1,7 +1,7 @@
 SELECT
     b.description as geographic_division,
     c.description as race,
-    COUNT(*) as responder_count
+    COUNT(a.household_identifier) as responder_count
 FROM
     basic_monthly_cps.fct_dec_monthly_cps a
 LEFT JOIN
