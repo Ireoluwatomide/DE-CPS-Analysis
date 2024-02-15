@@ -4,15 +4,15 @@
 
 The contains two solution
 
-1. [python_solution](/Users/ireoluwa/Documents/projects/ireoluwa/DE-Interswitch-Assessment/python_solution)
+1. [python_solution](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/tree/main/python_solution)
 
-2. [spark_solution](/Users/ireoluwa/Documents/projects/ireoluwa/DE-Interswitch-Assessment/spark_solution)
+2. [spark_solution](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/tree/main/spark_solution)
 
 To run the code follow these steps:
 
 1. Make sure you have Python installed on your machine.
 2. Create a virtual environments
-3. Install the libraries in the [requirements.txt](/Users/ireoluwa/Documents/projects/ireoluwa/DE-Interswitch-Assessment/requirements.txt) file.
+3. Install the libraries in the [requirements.txt](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/blob/main/requirements.txt) file.
 4. Run the following command for python solution
 
     ```bash
