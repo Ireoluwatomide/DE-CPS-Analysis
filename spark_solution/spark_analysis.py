@@ -119,8 +119,7 @@ class SparkQueryExecutor:
                 COUNT(a.household_identifier) AS responders_count
             FROM
                 fct_dec_monthly_cps a
-            WHERE
-                access_to_telephone_elsewhere = 1
+            WHERE (access_to_telephone_elsewhere = 1 OR telephone_in_house = 1)
             AND telephone_interview_accepted = 2;
         ''')
 

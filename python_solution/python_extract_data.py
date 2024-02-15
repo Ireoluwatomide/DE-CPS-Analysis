@@ -27,6 +27,8 @@ def extract_raw_data():
         ('HRHHID2', 70, 5),
         ('GEDIV', 90, 1),
         ('PTDTRACE', 138, 2),
+        ('HRINTSTA', 56, 2),
+        ('PRPERTYP', 160, 2)
     ]
 
     # Read data from .dat file and extract data based on the column positions and sizes

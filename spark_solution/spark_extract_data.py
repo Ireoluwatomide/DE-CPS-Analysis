@@ -34,12 +34,14 @@ def extract_raw_data():
             StructField('HEFAMINC', IntegerType(), True),
             StructField('HRHHID2', StringType(), True),
             StructField('GEDIV', IntegerType(), True),
-            StructField('PTDTRACE', IntegerType(), True)
+            StructField('PTDTRACE', IntegerType(), True),
+            StructField('HRINTSTA', IntegerType(), True),
+            StructField('PRPERTYP', IntegerType(), True)
         ])
 
         # Define the column positions and widths
         column_positions = [(0, 15), (15, 17), (17, 21), (23, 26), (30, 32), (60, 62), (32, 34), (34, 36), (36, 38),
-                            (64, 66), (38, 40), (70, 75), (90, 91), (138, 140)]
+                            (64, 66), (38, 40), (70, 75), (90, 91), (138, 140), (56, 58), (160, 162)]
 
         # Read the fixed-width data with the specified positions and schema
         raw_df = spark.read.text(file_path) \
@@ -50,7 +52,7 @@ def extract_raw_data():
 
         logger.info("Data extraction completed. Total records extracted: {}".format(raw_df.count()))
 
-        # raw_df.show(5)
+        # raw_df.show(20)
 
         # # Write extracted data to .csv file
         # raw_df.write.csv('./out/spark_raw_data.csv', header=True, mode='overwrite')
