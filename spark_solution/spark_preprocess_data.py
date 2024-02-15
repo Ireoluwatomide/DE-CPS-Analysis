@@ -26,7 +26,7 @@ class SparkDataPreprocessor:
         df = df.withColumn('PTDTRACE', when(df['PRPERTYP'] == -1, None).otherwise(df['PTDTRACE']))
         df = df.withColumn('HETELHHD', when(df['HRINTSTA'] != 1, None).otherwise(df['HETELHHD']))
         df = df.withColumn('HETELAVL', when(df['HETELHHD'] != 2, None).otherwise(df['HETELAVL']))
-        df = df.withColumn('HEPHONEO', when((df['HETELHHD'] != 1) | (df['HETELAVL'] != 1), None).
+        df = df.withColumn('HEPHONEO', when((df['HETELHHD'] != 1) & (df['HETELAVL'] != 1), None).
                            otherwise(df['HEPHONEO']))
 
         # df.show(5)
