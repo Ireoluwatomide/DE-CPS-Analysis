@@ -10,16 +10,35 @@ The contains two solution
 
 To run the code follow these steps:
 
-1. Make sure you have Python installed on your machine.
-2. Create a virtual environments
-3. Install the libraries in the [requirements.txt](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/blob/main/requirements.txt) file.
-4. Run the following command for python solution
+1. Clone the repository
+
+    ```bash
+    git clone https://github.com/Ireoluwatomide/DE-Interswitch-Assessment.git
+    ```
+2. Navigate to the directory
+
+    ```bash
+    cd DE-Interswitch-Assessment
+    ```
+3. Create the logs and out directory
+
+    ```bash
+    mkdir logs
+    mkdir out
+    ```
+4. Make sure you have Python installed on your machine.
+5. 
+5. Create a virtual environments
+6. Install the libraries in the [requirements.txt](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/blob/main/requirements.txt) file.
+7. Run the following command for python solution
 
     ```bash
     python python_main.py
+    ```
 
-5. Run the following command for spark solution
+8. Run the following command for spark solution
 
     ```bash
     python spark_main.py
+    ```
 
