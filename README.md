@@ -27,7 +27,6 @@ To run the code follow these steps:
     mkdir out
     ```
 4. Make sure you have Python installed on your machine.
-5. 
 5. Create a virtual environments
 6. Install the libraries in the [requirements.txt](https://github.com/Ireoluwatomide/DE-Interswitch-Assessment/blob/main/requirements.txt) file.
 7. Run the following command for python solution
