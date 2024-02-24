@@ -10,6 +10,7 @@ class SparkContextManager:
             .appName(app_name) \
             .config("spark.hadoop.fs.defaultFS", "hdfs://localhost:9000") \
             .config("spark.hadoop.dfs.client.use.datanode.hostname", "true") \
+            .config("spark.sql.warehouse.dir", "hdfs://localhost:9000/user/hive/warehouse") \
             .getOrCreate()
 
     def get_spark_session(self):
