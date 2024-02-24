@@ -8,6 +8,8 @@ class SparkContextManager:
     def __init__(self, app_name="CPS Data Analysis"):
         self.spark = SparkSession.builder \
             .appName(app_name) \
+            .config("spark.hadoop.fs.defaultFS", "hdfs://localhost:9000") \
+            .config("spark.hadoop.dfs.client.use.datanode.hostname", "true") \
             .getOrCreate()
 
     def get_spark_session(self):

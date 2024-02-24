@@ -14,7 +14,7 @@ def extract_raw_data():
 
     try:
         # Read the input file from the data folder
-        file_path = "./data/dec17pub.dat"
+        file_path = 'hdfs://localhost:9000/User/data/dec17pub.dat'
 
         # Initialise the spark session
         spark = SparkContextManager().get_spark_session()
