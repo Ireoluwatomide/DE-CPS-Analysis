@@ -1,4 +1,4 @@
-# DE-Interswitch-Assessment
+# DE-CPS-Analysis
 
 ## Running the solution
 
